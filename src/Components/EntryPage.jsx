@@ -6,7 +6,7 @@ const EntryPage = ({ isplayed, setIsplayed }) => {
       <div className="grid grid-cols-12 gap-3 w-full">
         <div className="lg:col-span-6 col-span-12 lg:order-1 order-2 flex justify-center">
           <img
-            src="public\Images\Dices-Image.png"
+            src="src\assets\Images\Dices-Image.png"
             alt=""
             className="lg:max-w-full min-[450px]:max-w-[50%] h-auto"
           />

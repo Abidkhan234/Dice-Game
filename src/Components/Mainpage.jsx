@@ -13,7 +13,6 @@ const Mainpage = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleClasses = (btn) => {
-
     if (btn === undefined) return;
 
     btn.classList.toggle("bg-black");
@@ -28,7 +27,7 @@ const Mainpage = () => {
 
     let randomNum = Math.ceil(Math.random() * 6);
 
-    imageElem.current.src = `public/Images/dice_${randomNum}.png`;
+    imageElem.current.src = `src/assets/Images/dice_${randomNum}.png`;
 
     if (slectedNum === randomNum) {
       setScore((v) => v + slectedNum);
@@ -36,7 +35,7 @@ const Mainpage = () => {
       setScore((v) => v - 2);
     }
     setError("");
-    setSlectedBtn("")
+    setSlectedBtn("");
     toggleClasses(slectedBtn);
   };
 

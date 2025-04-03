@@ -19,7 +19,7 @@ const Dice = ({
           >
             <img
               ref={imageElem}
-              src="public\Images\dice_1.png"
+              src="src\assets\Images\dice_1.png"
               alt=""
               className="w-[50%] h-[50%] object-cover"
             />
