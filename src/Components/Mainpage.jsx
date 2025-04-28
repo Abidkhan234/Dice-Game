@@ -43,7 +43,7 @@ const Mainpage = () => {
 
     let randomNum = Math.floor(Math.random() * 6);
 
-    imageElem.current.src = images[randomNum] || diceImage1;
+    imageElem.current.src = images[randomNum];
 
     if (slectedNum === randomNum) {
       setScore((v) => v + slectedNum);

@@ -1,5 +1,7 @@
 import React from "react";
 
+import diceImage1 from "../assets/Images/dice_1.png";
+
 const Dice = ({
   generateRandomNumber,
   imageElem,
@@ -19,7 +21,7 @@ const Dice = ({
           >
             <img
               ref={imageElem}
-              src="src\assets\Images\dice_1.png"
+              src={diceImage1}
               alt=""
               className="w-[50%] h-[50%] object-cover"
             />
