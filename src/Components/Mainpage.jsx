@@ -41,7 +41,7 @@ const Mainpage = () => {
       return;
     }
 
-    let randomNum = Math.floor(Math.random() * 6);
+    let randomNum = Math.floor(Math.random() * 6) || 0;
 
     imageElem.current.src = images[randomNum];
 
