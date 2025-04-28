@@ -3,7 +3,23 @@ import UserSlection from "./UserSlection";
 import Dice from "./Dice";
 import Rules from "./Rules";
 
+import diceImage1 from "../assets/Images/dice_1.png";
+import diceImage2 from "../assets/Images/dice_2.png";
+import diceImage3 from "../assets/Images/dice_3.png";
+import diceImage4 from "../assets/Images/dice_4.png";
+import diceImage5 from "../assets/Images/dice_5.png";
+import diceImage6 from "../assets/Images/dice_6.png";
+
 const Mainpage = () => {
+  const images = [
+    diceImage1,
+    diceImage2,
+    diceImage3,
+    diceImage4,
+    diceImage5,
+    diceImage6,
+  ];
+
   const imageElem = React.useRef();
 
   const [slectedNum, setSlectedNum] = useState(0);
@@ -25,9 +41,9 @@ const Mainpage = () => {
       return;
     }
 
-    let randomNum = Math.ceil(Math.random() * 6);
+    let randomNum = Math.floor(Math.random() * 6);
 
-    imageElem.current.src = `src/assets/Images/dice_${randomNum}.png`;
+    imageElem.current.src = images[randomNum];
 
     if (slectedNum === randomNum) {
       setScore((v) => v + slectedNum);
