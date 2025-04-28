@@ -41,9 +41,9 @@ const Mainpage = () => {
       return;
     }
 
-    let randomNum = Math.floor(Math.random() * 6) || 0;
+    let randomNum = Math.floor(Math.random() * 6);
 
-    imageElem.current.src = images[randomNum];
+    imageElem.current.src = images[randomNum] || diceImage1;
 
     if (slectedNum === randomNum) {
       setScore((v) => v + slectedNum);
